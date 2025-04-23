@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #f4f4f4;
+    background: url(img/bg.png) center top no-repeat;
+    background-color: #141414;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+/* HEADER */
+
+header nav {
+    margin-top: 20px;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #494949;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav h2 {
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header nav a {
+    /* text-decoration: none; */
+    color: #494949;
+}
+
+header nav .settings {
+    display: none;
+}
+
+header nav .settings .lang {
+    margin-right: 20px;
+}
+
+
+/* INTRO */
+
+#intro {
+    margin-top: 60px;
+}
+
+#intro h1 {
+    margin-bottom: 30px;
+    font-size: 2.8rem;
+}
+
+#intro h1 .highlight {
+    color: #1cf5b7
+}
+
+#intro .waving-hand {
+    font-size: 3.5rem;
+}
+
+#intro p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+/* Rollover effect */
+
+.dash {
+    border-bottom: 1px dotted #5a5a5a;
+}
+
+.messy {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.emoji {
+    position: absolute;
+    top: 0;
+    font-size: 60px;
+    pointer-events: none;
+    /* Évite les conflits avec le curseur */
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.photo {
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+
+/* PRE */
+
+#notebook {
+    margin-top: 80px;
+    margin-bottom: 150px;
+}
+
+.code-block {
+    background-color: #1b1c23;
+    color: #f8f8f2;
+    padding: 20px;
+    padding-left: 80px;
+    border-radius: 10px;
+    font-family: 'Fira Code', monospace;
+    font-size: 14px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+.code-block .line-number {
+    color: #7f8c8d;
+    font-weight: bold;
+    display: inline-block;
+    width: 30px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.cv {
+    color: #f8f8f2;
+}
+
+.comment {
+    color: #6272a4;
+}
+
+/* Bleu-gris */
+.import {
+    color: #ae8bfd !important;
+}
+
+/* Bleu clair */
+.variable {
+    color: #1cf5b7;
+}
+
+/* Vert fluo */
+.string {
+    color: #f1fa8c;
+}
+
+/* Jaune pastel */
+.key {
+    color: #ff79c6;
+}
+
+
+/* Projects */
+
+
+.project-box {
+    margin: 0 0 30px 0;
+    /* padding: 15px 15px 0; */
+    border: 1px solid #494949;
+    border-radius: 5px;
+    min-height: 240px;
+    background: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-box h3 {
+    padding: 15px 15px 0 15px;
+}
+
+.project-box p {
+    padding: 0 15px;
+    color: #777;
+}
+
+.bottom-box {
+    margin-top: auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #494949;
+}
+
+.bottom-box p {
+    margin: 0;
+    font-family: 'Fira Code', monospace;
+}
+
+.bottom-box a {
+    text-decoration: none;
+    color: #1cf5b7;
+}
+
+.bottom-box a span {
+    display: inline-block;
+    transition: transform 0.15s ease-in-out;
+}
+
+.bottom-box a:hover span {
+    transform: translateX(5px);
+}
+
+/* QUOTE */
+
+blockquote {
+    margin: 200px auto;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    color: #494949;
+}
+
+blockquote .quote-svg {
+    width: 120px;
+    position: absolute;
+    top: -60px;
+    right: 60px;
+    z-index: -1;
+}
+
+
+/* FOOTER */
+
+footer {
+    /* margin-top: 100px; */
+    color: #494949;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+
+
+/* RESPONSIVE */
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+    body {
+        background: url(img/bg.png) center -20px no-repeat #141414;
+    }
+
+    #intro .break {
+        display: none;
+    }
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    body {
+        background: url(img/bg.png) center -40px no-repeat #141414;
+    }
+
+    #intro h1 {
+        font-size: 2.45rem;
+    }
+
+
+
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    .code-block {
+        padding-left: 20px;
+    }
+}
+
+
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    #intro h1 {
+        font-size: 2rem;
+    }
+}
