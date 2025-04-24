@@ -1,11 +1,11 @@
-# 🎨 My Portfolio
+# 🎨 Mon Portfolio
 
 Welcome to my portfolio!
 
 This site showcases my background, skills, and 
 my last projects as a **Data Analyst**.
 
-➡️ [Access the portfolio](https://driixdata.github.io/)
+➡️ [Accéder à  portfolio](https://nathalie9410.github.io/)
 
 ## 🛠️ Next steps
 
@@ -19,8 +19,8 @@ my last projects as a **Data Analyst**.
 
 ## 📬 Contact
 
-Find me on [LinkedIn](https://www.linkedin.com/in/c3dr1c/) 
+Ma page [LinkedIn](https://linkedin.com/in/nathalie-claude-mqe/) 
 
 
-Feel free to share your feedback! 😊
+N'hésitez pas à me contacter! 😊
 
