@@ -4,7 +4,7 @@ const messyWord = document.querySelector(".messy");
 const emoji = document.createElement("span");
 
 // Liste d'emojis aléatoires
-const emojis = ["💩", "🤪", "😂", "😱", "👎", "👻", "🫣", "🙈", "🤮"];
+const emojis = ["🤪", "😂", "😱", "👎", "👻", "🫣"];
 
 emoji.classList.add("emoji");
 document.body.appendChild(emoji);
