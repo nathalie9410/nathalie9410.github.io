@@ -132,11 +132,11 @@ header nav .settings .lang {
 }
 
 .code-block {
-    background-color: #1b1c23;
-    color: #f8f8f2;
+    background-color: #1e1e2f;
+    color: #e6e6e6;
     padding: 20px;
     padding-left: 80px;
-    border-radius: 10px;
+    border-radius: 12px;
     font-family: 'Fira Code', monospace;
     font-size: 14px;
     overflow-x: auto;
@@ -144,7 +144,7 @@ header nav .settings .lang {
 }
 
 .code-block .line-number {
-    color: #7f8c8d;
+    color: #5C5C5C;
     font-weight: bold;
     display: inline-block;
     width: 30px;
@@ -157,7 +157,7 @@ header nav .settings .lang {
 }
 
 .comment {
-    color: #6272a4;
+    color: #9da5b4;
 }
 
 /* Bleu-gris */
