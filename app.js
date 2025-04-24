@@ -37,8 +37,8 @@ messyWord.addEventListener("mouseleave", () => {
 const nameElement = document.querySelector(".name");
 const img = document.createElement("img");
 
-img.src = "img/photo.png"; // Remplace par le lien de ta photo
-img.alt = "Photo de Cédric";
+img.src = "img/WhatsApp Image 2025-03-18.png"; // Remplace par le lien de ta photo
+img.alt = "Photo de Nathalie";
 img.style.position = "absolute";
 img.style.width = "300px"; // Taille de l'image
 img.style.borderRadius = "10px"; // Coins arrondis
