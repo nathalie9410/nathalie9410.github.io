@@ -37,7 +37,7 @@ messyWord.addEventListener("mouseleave", () => {
 const nameElement = document.querySelector(".name");
 const img = document.createElement("img");
 
-img.src = "en/img/photo.png"; // Remplace par le lien de ta photo
+img.src = "img/photo.png"; // Remplace par le lien de ta photo
 img.alt = "Photo de Nathalie";
 img.style.position = "absolute";
 img.style.width = "300px"; // Taille de l'image
