@@ -411,3 +411,41 @@ a:hover{ text-decoration: underline; }
 /* Petits raffinements d’accessibilité */
 #intro h1{ letter-spacing:-0.02em; }
 .project-box, .code-block{ border-radius:12px; }
+
+
+
+
+/* --- Harmonisation des couleurs du texte --- */
+
+/* Texte principal */
+body {
+    color: #0f172a; /* gris anthracite */
+}
+
+/* Paragraphes */
+p {
+    color: #475569; /* gris bleuté */
+}
+
+/* Titres & highlights */
+h1, h2, h3, h4, h5, h6,
+.highlight {
+    color: #7c3aed; /* violet principal */
+}
+
+/* Liens */
+a {
+    color: #2563eb; /* bleu sobre */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #6d28d9; /* violet plus sombre au hover */
+}
+
+/* Accent spécial (ex: objectif, emphase) */
+strong, b {
+    color: #0f172a; /* noir/gris anthracite */
+    font-weight: 600;
+}
