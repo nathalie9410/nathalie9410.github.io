@@ -316,3 +316,98 @@ footer p {
         font-size: 2rem;
     }
 }
+
+/* =========================
+   THEME CLAIR (override)
+   À coller en fin de fichier
+   ========================= */
+
+:root{
+  --bg: #f7f8fb;           /* gris très clair */
+  --text: #0f172a;         /* gris anthracite (lisible) */
+  --muted: #556070;        /* gris moyen pour textes secondaires */
+  --card: #ffffff;         /* fond des blocs/cartes */
+  --border: #e5e7eb;       /* bordures discrètes */
+  --accent: #7c3aed;       /* violet (ton actuel) */
+  --accent-soft: rgba(124,58,237,.08);
+  --link: #F26419;         /* ta couleur de lien actuelle */
+}
+
+/* Page */
+body{
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+/* Halo plus doux et clair */
+.halo{
+  top: -220px;
+  width: 1000px; height: 550px;
+  background: radial-gradient(ellipse at center,
+              rgba(124, 58, 237, .18) 0%,
+              rgba(255,255,255,.7) 55%,
+              transparent 100%);
+  filter: blur(80px);
+}
+
+/* Header */
+header nav, header nav a{
+  color: var(--muted);
+}
+
+/* Intro */
+#intro h1 .highlight, #intro .highlight{ color: var(--accent); }
+#intro p{ color: var(--muted); }
+
+/* Effets */
+.dash{ border-bottom: 1px dotted #b4bcc8; }
+
+/* Bloc « code » en clair */
+.code-block{
+  background-color: #f6f8fa;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.code-block .line-number{ color:#94a3b8; }
+
+/* Mise à jour des couleurs « syntaxe » (douces sur fond clair) */
+.cv{ color:#111827; }
+.comment{ color:#6b7280; }
+.import{ color:#7c3aed !important; }
+.variable{ color:#b91c1c; }   /* rouge doux */
+.string{ color:#2563eb; }     /* bleu doux */
+.key{ color:#0f766e; }        /* vert sarcelle */
+
+/* Cartes projets */
+.project-box{
+  border: 1px solid var(--border);
+  background: var(--card);
+  box-shadow: 0 10px 30px rgba(16,24,40,.06);
+}
+.project-box p{ color: var(--muted); }
+.bottom-box{
+  border-top: 1px solid var(--border);
+}
+.bottom-box a{ color: var(--link); }
+
+/* Blockquote / texte secondaire */
+blockquote{ color: var(--muted); }
+
+/* Footer */
+footer{ color: var(--muted); }
+
+/* Liens généraux */
+a{ color: var(--accent); }
+a:hover{ text-decoration: underline; }
+
+/* Responsive : même image mais fond clair */
+@media (max-width: 1399.98px){
+  body{ background: url(img/bg.png) center -20px no-repeat var(--bg); }
+}
+@media (max-width: 1199.98px){
+  body{ background: url(img/bg.png) center -40px no-repeat var(--bg); }
+}
+
+/* Petits raffinements d’accessibilité */
+#intro h1{ letter-spacing:-0.02em; }
+.project-box, .code-block{ border-radius:12px; }
