@@ -411,3 +411,42 @@ a:hover{ text-decoration: underline; }
 /* Petits raffinements d’accessibilité */
 #intro h1{ letter-spacing:-0.02em; }
 .project-box, .code-block{ border-radius:12px; }
+
+/* ===== Palette harmonisée : Violet + Gris ===== */
+:root{
+  --text: #0f172a;          /* gris très foncé (titres/paragraphes) */
+  --text-2: #475569;        /* gris moyen (descriptions) */
+  --text-3: #64748b;        /* gris léger (meta, légendes) */
+  --accent: #7c3aed;        /* violet principal */
+  --accent-hover: #6d28d9;  /* hover plus foncé */
+  --link: var(--accent);    /* liens = violet */
+}
+
+/* Texte global */
+body{ color: var(--text); }
+header nav, header nav a,
+#intro p, .project-box p, blockquote, footer{ color: var(--text-2); }
+
+/* Liens et survol */
+a{ color: var(--link); }
+a:hover{ color: var(--accent-hover); text-decoration: underline; }
+
+/* Titres & highlights */
+#intro h1 .highlight, #intro .highlight{ color: var(--accent); }
+
+/* Cartes projets */
+.project-box{ /* déjà clair via override précédent */ }
+.project-box h3{ color: var(--text); }
+.project-box p{ color: var(--text-2); }
+
+/* Barre du bas : lien Github aligné sur l’accent */
+.bottom-box a{ color: var(--accent); }
+.bottom-box a:hover{ color: var(--accent-hover); }
+
+/* --- Syntaxe "code" harmonisée (monochrome violet + gris) --- */
+.code-block{ color: var(--text); }
+.comment{ color: #94a3b8; }    /* gris commentaire */
+.import{ color: var(--accent) !important; } /* mots-clés/imports */
+.variable{ color: #374151; }   /* variables en gris foncé */
+.string{ color: #6d28d9; }     /* chaînes = violet assombri */
+.key{ color: #7c3aed; }        /* clés/attributs = accent */
