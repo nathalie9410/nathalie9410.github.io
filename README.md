@@ -5,7 +5,7 @@ Welcome to my portfolio!
 This site showcases my background, skills, and 
 my last projects as a **Data Analyst**.
 
-➡️ [Accéder à  portfolio](https://nathalie9410.github.io/)
+<a href="https://nathalie9410.github.io/" target="_blank">➡️ Accéder au portfolio</a>
 
 ## 🛠️ Next steps
 
@@ -19,7 +19,7 @@ my last projects as a **Data Analyst**.
 
 ## 📬 Contact
 
-Ma page [LinkedIn](https://linkedin.com/in/nathalie-claude-mqe/) 
+<a href="https://linkedin.com/in/nathalie-claude-mqe/" target="_blank">Ma page linkedIn</a>
 
 
 N'hésitez pas à me contacter! 😊
